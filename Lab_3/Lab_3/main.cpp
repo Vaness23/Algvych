@@ -94,9 +94,9 @@ void exchange(int num[], char str[][81], int substring)
         {
             ptr = strstr(victim, "end");
             *ptr = '}';
-            for (ptr++ ;ptr < victim + strlen (victim) - 4; ptr++)
-                *ptr = *(ptr+4);
-            for(ptr = victim + strlen(victim) - 1, i=1; i<=4; i++, ptr--)
+            for (ptr++ ;ptr < victim + strlen (victim) - 2; ptr++)
+                *ptr = *(ptr+2);
+            for(ptr = victim + strlen(victim) - 1, i=1; i<=2; i++, ptr--)
                 *ptr = '\0';
         }
     }
